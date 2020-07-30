@@ -1,7 +1,7 @@
 class Song
   attr_accessor :name, :artist
  
-  # other methods
+  
   
   def self.new_by_filename(filename)
     song = self.new
