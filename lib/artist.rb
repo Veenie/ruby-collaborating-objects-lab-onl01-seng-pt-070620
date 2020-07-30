@@ -27,8 +27,8 @@ class Artist
     self.all.find do |artist|
       if artist.name == name
         songs
-    else
-      Artist.new(name)
+      else
+        Artist.new(name)
     end  
 
   end
