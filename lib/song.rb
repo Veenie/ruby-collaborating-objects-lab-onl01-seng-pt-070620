@@ -8,8 +8,11 @@ class Song
   
   def save
     @@all << self
-  end 
+  end
   
+  def self.all
+    @all
+  end
   
   def self.new_by_filename(filename)
     song = self.new
