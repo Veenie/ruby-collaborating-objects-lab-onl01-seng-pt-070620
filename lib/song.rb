@@ -6,6 +6,9 @@ class Song
     save
   end
   
+  def save
+    @@all << self
+  end 
   
   
   def self.new_by_filename(filename)
