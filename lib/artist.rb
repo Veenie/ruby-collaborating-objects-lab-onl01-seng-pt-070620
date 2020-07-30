@@ -24,7 +24,12 @@ class Artist
   end
   
   def self.find_or_create_by_name(name)
-    
+    self.all.find do |artist| 
+    if artist.name == name
+      songs
+    else
+      Artist.new(name)
+    end  
 
   end
   
