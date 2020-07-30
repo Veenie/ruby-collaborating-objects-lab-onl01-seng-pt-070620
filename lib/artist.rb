@@ -29,6 +29,7 @@ class Artist
     else
       self.artist.name = name
     end
+    self.artist.name
   end
   
   def print_songs
